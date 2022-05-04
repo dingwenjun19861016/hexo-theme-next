@@ -97,10 +97,10 @@ creative_commons:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
-#scheme: Mist
-#scheme: Pisces
-#scheme: Gemini
+# scheme: Muse
+# scheme: Mist
+scheme: Pisces
+# scheme: Gemini
 
 # Dark Mode
 darkmode: false
@@ -120,7 +120,20 @@ menu:
   #about: /about/ || fa fa-user
   #tags: /tags/ || fa fa-tags
   #categories: /categories/ || fa fa-th
-  archives: /archives/ || fa fa-archive
+  work:
+    default: /work || fa fa-th
+    it: /it || fa fa-phone
+    chef: /chef || fa fa-fish
+    intern: /intern || fa fa-users
+    business: /business || fa fa-home
+  study: 
+    default: /study || fa fa-book
+    lang: /lang || fa fa-school
+    college: /college || fa fa-graduation-cap
+    postgraduate: /postgraduate || fa fa-home
+  life: /life || fa fa-tags
+  forum: https://forum.furi.info/ || fa fa-comment
+  # archives: /archives/ || fa fa-archive
   #schedule: /schedule/ || fa fa-calendar
   #sitemap: /sitemap.xml || fa fa-sitemap
   #commonweal: /404/ || fa fa-heartbeat
