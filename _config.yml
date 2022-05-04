@@ -131,7 +131,12 @@ menu:
     lang: /lang || fa fa-school
     college: /college || fa fa-graduation-cap
     postgraduate: /postgraduate || fa fa-home
-  life: /life || fa fa-tags
+  life: 
+    default: /life || fa fa-tags
+    dailylife: /dailylife || fa fa-tags
+    travel: /travel || fa fa-car
+    relation: /relation || fa fa-users
+    sex: /sex || fa fa-female
   forum: https://forum.furi.info/ || fa fa-comment
   # archives: /archives/ || fa fa-archive
   #schedule: /schedule/ || fa fa-calendar
