@@ -137,7 +137,15 @@ menu:
     travel: /travel || fa fa-car
     relation: /relation || fa fa-users
     sex: /sex || fa fa-female
-  forum: https://forum.furi.info/ || fa fa-comment
+  house:
+    default: /house || fa fa-home
+    buy: /buy || fa fa-home
+    rent: /rent || fa fa-calendar
+  forum: 
+    default: /contact || fa fa-comment
+    community: /client || fa fa-comment
+    school: /school || fa fa-comment
+    cooperation: /business || fa fa-comment
   # archives: /archives/ || fa fa-archive
   #schedule: /schedule/ || fa fa-calendar
   #sitemap: /sitemap.xml || fa fa-sitemap
@@ -169,7 +177,7 @@ sidebar:
   #  - always  expand for all pages automatically.
   #  - hide    expand only when click on the sidebar toggle icon.
   #  - remove  totally remove sidebar including sidebar toggle.
-  display: post
+  display: hide
 
   # Sidebar padding in pixels.
   padding: 18
@@ -856,17 +864,17 @@ motion:
     post_body: slideDownIn
     coll_header: slideLeftIn
     # Only for Pisces | Gemini.
-    sidebar: slideUpIn
+    # sidebar: slideUpIn
 
 # Progress bar in the top during page loading.
 # Dependencies: https://github.com/theme-next/theme-next-pace
 # For more information: https://github.com/HubSpot/pace
 pace:
-  enable: false
+  enable: true
   # Themes list:
   # big-counter | bounce | barber-shop | center-atom | center-circle | center-radar | center-simple
   # corner-indicator | fill-left | flat-top | flash | loading-bar | mac-osx | material | minimal
-  theme: center-simple
+  theme: minimal
 
 # JavaScript 3D library.
 # Dependencies: https://github.com/theme-next/theme-next-three

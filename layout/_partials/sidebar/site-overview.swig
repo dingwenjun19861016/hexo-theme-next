@@ -3,8 +3,6 @@
     <img class="site-author-image" itemprop="image" alt="{{ author }}"
       src="{{ url_for(theme.avatar.url) }}">
   {%- endif %}
-  <p class="site-author-name" itemprop="name">{{ author }}</p>
-  <div class="site-description" itemprop="description">{{ description }}</div>
 </div>
 
 {%- if theme.site_state %}
@@ -12,14 +10,10 @@
   <nav class="site-state">
     {%- if config.archive_dir != '/' and site.posts.length > 0 %}
       <div class="site-state-item site-state-posts">
-        {%- if theme.menu.archives %}
-          <a href="{{ url_for(theme.menu.archives.split('||')[0] | trim) }}">
-        {% else %}
-          <a href="{{ url_for(config.archive_dir) }}">
-        {%- endif %}
-          <span class="site-state-item-count">{{ site.posts.length }}</span>
-          <span class="site-state-item-name">{{ __('state.posts') }}</span>
-        </a>
+          <a href="https://forum.furi.info/">
+          <span class="site-state-item-count">赴日Info论坛</span>
+          <span class="site-state-item-name">全面的日本交流论坛</span>
+          </a>
       </div>
     {%- endif %}
 

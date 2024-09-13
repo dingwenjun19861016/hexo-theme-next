@@ -46,22 +46,7 @@
           {%- set time_diff = time(post.date) != time(post.updated) %}
           {%- set datetime_diff = date_diff or time_diff %}
 
-          {%- if theme.post_meta.created_at %}
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">{{ __('post.posted') }}</span>
-
-              {%- if not date_diff and time_diff and theme.post_meta.updated_at.enable and theme.post_meta.updated_at.another_day %}
-                {%- set create_title = __('post.created') + __('symbol.colon') + full_date(post.date) + ' / ' + __('post.modified') + __('symbol.colon') + time(post.updated) %}
-              {% else %}
-                {%- set create_title = __('post.created') + __('symbol.colon') + full_date(post.date) %}
-              {%- endif %}
-
-              <time title="{{ create_title }}" itemprop="dateCreated datePublished" datetime="{{ moment(post.date).format() }}">{{ date(post.date) }}</time>
-            </span>
-          {%- endif %}
+          
 
           {%- if theme.post_meta.updated_at.enable and datetime_diff %}
             {%- set display_updated = not theme.post_meta.updated_at.another_day or theme.post_meta.updated_at.another_day and date_diff %}

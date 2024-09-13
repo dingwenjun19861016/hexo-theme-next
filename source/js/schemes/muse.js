@@ -8,17 +8,17 @@ document.addEventListener('DOMContentLoaded', () => {
   var mousePos = {};
 
   var sidebarToggleLines = {
-    lines: document.querySelector('.sidebar-toggle'),
+    // lines: document.querySelector('.sidebar-toggle'),
     init : function() {
-      this.lines.classList.remove('toggle-arrow', 'toggle-close');
+      // this.lines.classList.remove('toggle-arrow', 'toggle-close');
     },
     arrow: function() {
-      this.lines.classList.remove('toggle-close');
-      this.lines.classList.add('toggle-arrow');
+      // this.lines.classList.remove('toggle-close');
+      // this.lines.classList.add('toggle-arrow');
     },
     close: function() {
-      this.lines.classList.remove('toggle-arrow');
-      this.lines.classList.add('toggle-close');
+      // this.lines.classList.remove('toggle-arrow');
+      // this.lines.classList.add('toggle-close');
     }
   };
 
@@ -31,9 +31,9 @@ document.addEventListener('DOMContentLoaded', () => {
       window.addEventListener('mousedown', this.mousedownHandler.bind(this));
       window.addEventListener('mouseup', this.mouseupHandler.bind(this));
       document.querySelector('#sidebar-dimmer').addEventListener('click', this.clickHandler.bind(this));
-      document.querySelector('.sidebar-toggle').addEventListener('click', this.clickHandler.bind(this));
-      document.querySelector('.sidebar-toggle').addEventListener('mouseenter', this.mouseEnterHandler.bind(this));
-      document.querySelector('.sidebar-toggle').addEventListener('mouseleave', this.mouseLeaveHandler.bind(this));
+      // document.querySelector('.sidebar-toggle').addEventListener('click', this.clickHandler.bind(this));
+      // document.querySelector('.sidebar-toggle').addEventListener('mouseenter', this.mouseEnterHandler.bind(this));
+      // document.querySelector('.sidebar-toggle').addEventListener('mouseleave', this.mouseLeaveHandler.bind(this));
       window.addEventListener('sidebar:show', this.showSidebar.bind(this));
       window.addEventListener('sidebar:hide', this.hideSidebar.bind(this));
     },

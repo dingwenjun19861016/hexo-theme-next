@@ -14,10 +14,10 @@
   {% set copyright_year = date(null, 'YYYY') %}
   &copy; {% if theme.footer.since and theme.footer.since != copyright_year %}{{ theme.footer.since }} – {% endif %}
   <span itemprop="copyrightYear">{{ copyright_year }}</span>
-  <span class="with-love">
+  <span>
     <i class="{{ theme.footer.icon.name }}"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">{{ theme.footer.copyright or author }}</span>
+  <span class="author" itemprop="copyrightHolder">日本信息交流综合区</span>
 
   {%- if config.symbols_count_time.total_symbols %}
     <span class="post-meta-divider">|</span>
@@ -42,14 +42,6 @@
   {%- endif %}
 </div>
 
-{%- if theme.footer.powered %}
-  <div class="powered-by">
-    {%- set next_site = 'https://theme-next.org' %}
-    {%- if theme.scheme !== 'Gemini' %}
-      {%- set next_site = 'https://' + theme.scheme | lower + '.theme-next.org' %}
-    {%- endif %}
-  </div>
-{%- endif %}
 
 {%- if theme.add_this_id %}
   <div class="addthis_inline_share_toolbox">

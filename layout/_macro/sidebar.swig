@@ -1,14 +1,7 @@
 {% macro render(display_toc) %}
-  <div class="toggle sidebar-toggle">
-    <span class="toggle-line toggle-line-first"></span>
-    <span class="toggle-line toggle-line-middle"></span>
-    <span class="toggle-line toggle-line-last"></span>
-  </div>
-
   <aside class="sidebar">
     <div class="sidebar-inner">
-
-      {%- set display_toc = page.toc.enable and display_toc %}
+      {%- set display_toc = page.toc.enable and display_toc and false %}
       {%- if display_toc %}
         {%- set toc = toc(page.content, { class: "nav", list_number: page.toc.number, max_depth: page.toc.max_depth }) %}
         {%- set display_toc = toc.length > 1 and display_toc %}
